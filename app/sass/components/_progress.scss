@@ -1,0 +1,64 @@
+.co-progress{
+    @include flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 45rem;
+    min-width: 25rem;
+    margin-bottom: 2.5rem;;
+
+    &__item{
+        font-weight: 400;
+        color: $grey;
+        position: relative;
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+
+        &:first-child::after{
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        &:nth-last-child(2)::after {
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        &:not(:last-child)::after{
+            position: absolute;
+            content: "";
+            height: .3rem;
+            width: 100%;
+            left: 50%;
+            background: $grey;
+            top: -1.5rem;
+        }
+
+        &.done{
+            color: $primary;
+
+            &::after{
+                background: $primary;
+            }
+        }
+
+        &.active{
+            color: $light;
+
+            &::before{
+                position: absolute;
+                display: block;
+                content: "";
+                height: .6rem;
+                width: .6rem;
+                border-radius: 50%;
+                background: $light;
+                top: -1.5rem;
+                left: 50%;
+                transform: translate(-50%, -.15rem);
+                z-index: 100;
+            }
+
+        }
+    }
+}

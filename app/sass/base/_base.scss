@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+    color: $light;
+    font-weight: 300;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.feather{
+    width: 2rem;
+    height: 2rem;
+    color: currentColor;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+
+    @include sm{
+        font-size: 3.2rem;
+    }
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    @include sm{
+        font-size: 2.8rem;
+    }
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 400;
+
+    @include sm{
+        font-size: 1.8rem;
+    }
+}
+
+.link{
+    color: $primary;
+    font-weight: 400;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.hidden{
+    display: none;
+}

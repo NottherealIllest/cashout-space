@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.4rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #F7F7F7;
+  font-weight: 300; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.feather {
+  width: 2rem;
+  height: 2rem;
+  color: currentColor; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700; }
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 3.2rem; } }
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700; }
+  @media screen and (max-width: 650px) {
+    h2 {
+      font-size: 2.8rem; } }
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400; }
+  @media screen and (max-width: 650px) {
+    h4 {
+      font-size: 1.8rem; } }
+
+.link {
+  color: #1A8B9C;
+  font-weight: 400; }
+  .link:hover {
+    text-decoration: underline; }
+
+.hidden {
+  display: none; }
+
+.caret {
+  height: 1.4rem;
+  width: 1.4rem; }
+
+.mb-2 {
+  margin-bottom: 1.6rem; }
+
+.mt-2 {
+  margin-top: 1.6rem; }
+
+.mr-2 {
+  margin-right: 1.6rem; }
+
+.ml-2 {
+  margin-left: 1.6rem; }
+
+.mb-1 {
+  margin-bottom: .8rem; }
+
+.mt-1 {
+  margin-top: .8rem; }
+
+.mr-1 {
+  margin-right: .8rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.ml-1 {
+  margin-left: .8rem; }
+
+.black {
+  color: #131628; }
+
+@media screen and (max-width: 650px) {
+  .hide-sm {
+    display: none !important; } }
+
+.primary-text {
+  color: #1A8B9C; }
+
+@media screen and (min-width: 651px) {
+  .show-sm {
+    display: none !important; } }
+
+.co-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.7rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .8rem;
+  transition: .2s ease-in all; }
+  .co-btn--primary {
+    background: #1A8B9C;
+    color: #fff; }
+    .co-btn--primary:hover {
+      box-shadow: 0 5px 25px rgba(26, 139, 156, 0.25); }
+  .co-btn--outline {
+    background: #1A8B9C;
+    color: #fff; }
+    .co-btn--outline:hover {
+      box-shadow: 0 5px 25px rgba(26, 139, 156, 0.25); }
+  .co-btn--round {
+    border-radius: 50px; }
+  .co-btn--small {
+    display: inline-flex;
+    width: auto;
+    padding: 1.3rem 2.2rem;
+    font-size: 1.2rem; }
+
+.co-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1.5rem; }
+  .co-form__group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start; }
+  .co-form__label {
+    color: #5B6A72;
+    font-weight: 400; }
+  .co-form__input {
+    min-width: 25rem;
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    border: solid 1px #E5E5E5;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background: #fff;
+    border-radius: .5rem;
+    transition: .2s ease all; }
+    .co-form__input.active {
+      border-color: #131628; }
+    .co-form__input select, .co-form__input input {
+      outline: none;
+      border: none;
+      background: transparent; }
+    .co-form__input__addon {
+      width: 5rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #5B6A72; }
+    .co-form__input__main {
+      flex: 1;
+      margin-left: .7rem;
+      font-size: 1.5rem;
+      color: #131628;
+      font-weight: 400; }
+  .co-form__action {
+    margin-top: 3rem; }
+
+.click-to-copy {
+  cursor: pointer; }
+
+.co-card {
+  background: #fff;
+  padding: 2.5rem;
+  min-height: 30rem;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 3px 25px rgba(26, 139, 156, 0.2);
+  color: #131628; }
+  .co-card--auto {
+    min-height: unset; }
+  @media screen and (max-width: 650px) {
+    .co-card {
+      padding: 2.5rem 2rem; } }
+  .co-card__heading {
+    text-align: center;
+    margin-bottom: 2.5rem; }
+    .co-card__heading__image {
+      width: 8rem;
+      height: 8rem;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      margin-top: 2rem; }
+      .co-card__heading__image img {
+        width: 100%; }
+  .co-card__follow-text {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #5B6A72; }
+
+.co-progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 45rem;
+  min-width: 25rem;
+  margin-bottom: 2.5rem; }
+  .co-progress__item {
+    font-weight: 400;
+    color: #E5E5E5;
+    position: relative;
+    flex: 1;
+    text-align: center;
+    cursor: pointer; }
+    .co-progress__item:first-child::after {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px; }
+    .co-progress__item:nth-last-child(2)::after {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px; }
+    .co-progress__item:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      height: .3rem;
+      width: 100%;
+      left: 50%;
+      background: #E5E5E5;
+      top: -1.5rem; }
+    .co-progress__item.done {
+      color: #1A8B9C; }
+      .co-progress__item.done::after {
+        background: #1A8B9C; }
+    .co-progress__item.active {
+      color: #F7F7F7; }
+      .co-progress__item.active::before {
+        position: absolute;
+        display: block;
+        content: "";
+        height: .6rem;
+        width: .6rem;
+        border-radius: 50%;
+        background: #F7F7F7;
+        top: -1.5rem;
+        left: 50%;
+        transform: translate(-50%, -0.15rem);
+        z-index: 100; }
+
+.co-review__group {
+  padding: .5rem 0 2rem 0; }
+  .co-review__group:not(:last-child) {
+    border-bottom: solid 1px #E5E5E5; }
+  .co-review__group:not(:first-child) {
+    margin-top: 1.5rem; }
+  .co-review__group__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem; }
+    .co-review__group__title h5 {
+      text-transform: uppercase;
+      color: #5B6A72;
+      font-size: 1.3rem;
+      font-weight: 300; }
+  .co-review__group__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .7rem; }
+    .co-review__group__list__item .title {
+      font-size: 1.3rem;
+      color: #5B6A72; }
+
+.co-landing {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(25rem, 50%) minmax(25rem, 1fr);
+  grid-gap: 5%;
+  align-items: center; }
+  @media screen and (max-width: 820px) {
+    .co-landing {
+      grid-template-columns: 100%; } }
+  .co-landing__left {
+    max-width: 55rem; }
+    @media screen and (max-width: 820px) {
+      .co-landing__left {
+        text-align: center;
+        margin: 0 auto; } }
+  .co-landing__heading {
+    margin-bottom: 2.5rem;
+    position: relative; }
+    .co-landing__heading::before {
+      content: "";
+      height: 3px;
+      width: 100px;
+      background: #1A8B9C;
+      border-radius: 5px;
+      position: absolute;
+      top: -30px;
+      left: 0; }
+      @media screen and (max-width: 820px) {
+        .co-landing__heading::before {
+          left: 50%;
+          transform: translateX(-50%);
+          top: -20px; } }
+  .co-landing__follow-text {
+    font-size: 1.8rem; }
+    @media screen and (max-width: 650px) {
+      .co-landing__follow-text {
+        font-size: 1.6rem; } }
+
+.co-extra-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.co-sell-coins {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+  background: url("../images/oval-loop-background.svg"), linear-gradient(#131628, #131628); }
+  .co-sell-coins__header {
+    padding: 2rem 8rem;
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 651px) and (max-width: 1100px) {
+      .co-sell-coins__header {
+        padding: 1.5rem 5rem; } }
+    @media screen and (max-width: 650px) {
+      .co-sell-coins__header {
+        padding: 1.5rem 2.5rem; } }
+  .co-sell-coins__main {
+    padding: 5rem 8rem;
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 651px) and (max-width: 1100px) {
+      .co-sell-coins__main {
+        padding: 5rem 5rem; } }
+    @media screen and (max-width: 650px) {
+      .co-sell-coins__main {
+        padding: 4rem 2.5rem; } }

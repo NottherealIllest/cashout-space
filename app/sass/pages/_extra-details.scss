@@ -1,0 +1,11 @@
+.co-extra-details{
+    // display: grid;
+    // grid-template-columns: 100%;
+    // grid-template-rows: auto;
+    // align-items: flex-start;
+    // justify-items: center;
+    // grid-row-gap: 2.5rem;
+    @include flex;
+    flex-direction: column;
+    
+}

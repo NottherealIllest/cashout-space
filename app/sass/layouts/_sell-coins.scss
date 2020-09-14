@@ -1,0 +1,33 @@
+.co-sell-coins{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8rem 1fr;
+    background: url("../images/oval-loop-background.svg"), linear-gradient($dark, $dark);
+
+    &__header{
+        padding: 2rem 8rem;
+        @include flex;
+
+        @include md{
+            padding: 1.5rem 5rem;
+        }
+
+        @include sm{
+            padding: 1.5rem 2.5rem;
+        }
+    }
+
+    &__main{
+        padding: 5rem 8rem;
+        margin-bottom: 3rem;
+
+        @include md{
+            padding: 5rem 5rem;
+        }
+
+        @include sm{
+            padding: 4rem 2.5rem;
+        }
+    }
+}

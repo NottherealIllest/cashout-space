@@ -1,0 +1,50 @@
+.co-landing{
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(25rem, 50%) minmax(25rem, 1fr);
+    grid-gap: 5%;
+    align-items: center;
+
+    @include not-lg{
+        grid-template-columns: 100%;
+    }
+
+    &__left{
+        max-width: 55rem;
+
+        @include not-lg{
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__heading{
+        margin-bottom: 2.5rem;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 3px;
+            width: 100px;
+            background: $primary;
+            border-radius: 5px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+
+            @include not-lg{
+                left: 50%;
+                transform: translateX(-50%);
+                top: -20px;
+            }
+        }
+    }
+
+    &__follow-text{
+        font-size: 1.8rem;
+
+        @include sm{
+            font-size: 1.6rem;
+        }
+    }
+}

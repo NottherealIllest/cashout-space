@@ -1,0 +1,42 @@
+.co-review{
+    &__group{
+        padding: .5rem 0 2rem 0;
+
+        &:not(:last-child){
+            border-bottom: solid 1px $grey;
+        }
+
+        &:not(:first-child){
+            margin-top: 1.5rem;
+        }
+
+        &__title{
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+            h5{
+                text-transform: uppercase;
+                color: $grey-dark;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+
+        &__list{
+            // @include flex;
+            // flex-direction: column;
+
+            &__item{
+                @include flex;
+                justify-content: space-between;
+                margin-bottom: .7rem;
+
+                .title{
+                    font-size: 1.3rem;
+                    color: $grey-dark;
+                }
+            }
+        }
+    }
+}

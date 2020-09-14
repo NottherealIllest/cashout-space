@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Coins - Cashout Space</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="co-sell-coins">
+    <header class="co-sell-coins__header">
+        <figure class="co-sell-coins__header__logo">
+            <img src="./images/cashout-logo.svg" alt="">
+        </figure>
+    </header>
+    <main class="co-landing co-sell-coins__main">
+        <div class="co-landing__left">
+            <h1 class="co-landing__heading">Sell your coins for cash instantly</h1>
+            <p class="co-landing__follow-text">Send and receive money with friends and family, exchange your Crypto for local currency. No sign up required. It’s crazy fast and with zero fees.</p>
+        </div>
+        <div class="co-card">
+            <div class="co-card__heading">
+                <h4>How much do you want to sell?</h4>
+                <p class="co-card__follow-text">1 BTC = <span class="primary-text">4,742,063.83</span> NGN</p>
+            </div>
+            <form action="extra-details.html" class="co-form">
+                <div class="co-form__group">
+                    <label for="" class="co-form__label">You sell</label>
+                    <div class="co-form__input">
+                        <select name="" class="co-form__input__addon" id="">
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                        </select>
+                        <input type="number" placeholder="Enter amount" value="0.0001" step="0.0001" class="co-form__input__main">
+                    </div>
+                </div>
+                <div class="co-form__group">
+                    <label for="" class="co-form__label">You recieve</label>
+                    <div class="co-form__input">
+                        <div class="co-form__input__addon">NGN</div>
+                        <input type="text" placeholder="Enter amount" value="50000" class="co-form__input__main">
+                    </div>
+                </div>
+                <div class="co-form__group co-form__action">
+                    <button class="co-btn co-btn--primary">Continue</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/cashout.js"></script>
+</body>
+</html>

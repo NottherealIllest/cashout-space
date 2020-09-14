@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Coins - Cashout Space</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="co-sell-coins">
+    <header class="co-sell-coins__header">
+        <figure class="co-sell-coins__header__logo">
+            <img src="./images/cashout-logo.svg" alt="">
+        </figure>
+    </header>
+    <main class="co-extra-details co-sell-coins__main">
+        <ul class="co-progress">
+            <li class="co-progress__item done">
+                Amount
+            </li>
+            <li class="co-progress__item active">
+                Addresses
+            </li>
+            <li class="co-progress__item">
+                Bank
+            </li>
+            <li class="co-progress__item">
+                Confirm
+            </li>
+        </ul>
+        <div class="co-card">
+            <div class="co-card__heading">
+                <h4>Extra Details</h4>
+            </div>
+            <form action="bank-details.html" class="co-form">
+                <div class="co-form__group">
+                    <label for="" class="co-form__label">Your email address</label>
+                    <div class="co-form__input">
+                        <input type="email" placeholder="Enter email" class="co-form__input__main">
+                    </div>
+                </div>
+                <div class="co-form__group">
+                    <label for="" class="co-form__label">Your wallet address</label>
+                    <div class="co-form__input">
+                        <input type="text" placeholder="Enter wallet address" class="co-form__input__main">
+                    </div>
+                </div>
+                <div class="co-form__group co-form__action">
+                    <button class="co-btn co-btn--primary">Continue</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/cashout.js"></script>
+</body>
+</html>

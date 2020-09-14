@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Coins - Cashout Space</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="co-sell-coins">
+    <header class="co-sell-coins__header">
+        <figure class="co-sell-coins__header__logo">
+            <img src="./images/cashout-logo.svg" alt="">
+        </figure>
+    </header>
+    <main class="co-extra-details co-sell-coins__main">
+        <div class="co-card">
+            <div class="co-card__heading">
+                <h4>Make Payment</h4>
+            </div>
+            <p class="mb-1">1. Copy the wallet address below</p>
+            <p class="mb-1">2. Transfer 0.00010192 BTC to the wallet address</p>
+            <p class="mb-1">3. Click I have made this transfer to confirm transaction</p>
+            <p class="mb-1">4. Money would be sent to your account if transaction is sucessful</p>
+            <div class="co-form mt-3 mb-3">
+                <div class="co-form__group">
+                    <label for="" class="co-form__label">Click to copy address</label>
+                    <div class="co-form__input">
+                        <div class="co-form__input__main click-to-copy" data-copy-target="wallet-address">6532gv673t6325e4s56x</div>
+                        <input type="text" class="hidden" id="wallet-address" value="6532gv673t6325e4s56x">
+                    </div>
+                </div>
+            </div>
+            <a class="co-btn co-btn--primary mt-2" href="success.html">I have made this transfer</a>
+        </div>
+    </main>
+
+    <script src="./js/cashout.js"></script>
+</body>
+</html>
